@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Not Found | Green Haven Nursery</title>
+    <style>
+        /* CSS Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            color: #333333;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, #2e7d32, #1b5e20);
+            color: white;
+            padding: 1.5rem 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #388e3c;
+            padding: 0.8rem 0;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav li {
+            margin: 0 1rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            padding: 0.5rem 1rem;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Error Content */
+        .error-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .error-icon {
+            font-size: 5rem;
+            color: #d32f2f;
+            margin-bottom: 1.5rem;
+        }
+
+        .error-title {
+            font-size: 2.5rem;
+            color: #1b5e20;
+            margin-bottom: 1rem;
+        }
+
+        .error-message {
+            font-size: 1.2rem;
+            color: #555;
+            max-width: 600px;
+            margin-bottom: 2rem;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background-color: #1b5e20;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #134616;
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background-color: #f5f5f5;
+            color: #1b5e20;
+            border: 1px solid #1b5e20;
+        }
+
+        .btn-secondary:hover {
+            background-color: #e8f5e9;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1b5e20;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .copyright {
+            padding-top: 1.5rem;
+            border-top: 1px solid #388e3c;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 600px) {
+            .error-title {
+                font-size: 2rem;
+            }
+            
+            .error-message {
+                font-size: 1rem;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav li {
+                margin: 0.3rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Green Haven Nursery</div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Plants</a></li>
+            <li><a href="#">Garden Supplies</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+    
+    <main class="error-container">
+        <div class="error-icon">❌</div>
+        <h1 class="error-title">Account Not Found</h1>
+        <p class="error-message">
+            We couldn't find an account associated with the information you provided. 
+            Please check your details and try again, or create a new account if you're new to Green Haven Nursery.
+        </p>
+        <div class="action-buttons">
+            <a href="login.html" class="btn btn-primary">Try Again</a>
+            <a href="register.html" class="btn btn-secondary">Create New Account</a>
+            <a href="index.html" class="btn btn-secondary">Return Home</a>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <p>123 Garden Lane, Greenville, GV 12345</p>
+            <p>Phone: (555) 123-4567 | Email: info@greenhavennursery.com</p>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 Green Haven Nursery. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

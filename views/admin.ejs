@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cap Vert - Admin</title>
+    <link rel="stylesheet" href="/css/admin.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h2><i class="fas fa-leaf"></i> Plant Admin</h2>
+            </div>
+            <div class="sidebar-menu">
+                <div class="menu-item active">
+                    <i class="fas fa-tachometer-alt"></i> Dashboard
+                </div>
+                <div class="menu-item">
+                    <i class="fas fa-shopping-bag"></i> Products
+                </div>
+                <div class="menu-item">
+                    <i class="fas fa-chart-line"></i> Sales
+                </div>
+                <div class="menu-item">
+                    <i class="fas fa-users"></i> orders
+                </div>
+                <div class="menu-item">
+                    <i class="fas fa-cog"></i> Settings
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="header">
+                <h1>Dashboard</h1>
+                <div class="user-info">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Admin">
+                    <span>Admin</span>
+                </div>
+            </div>
+
+            <!-- Stats Cards -->
+            <div class="stats-cards">
+                <div class="card stat-card">
+                    <div class="icon sales">
+                        <i class="fas fa-receipt"></i>
+                    </div>
+                    <div class="value">1,245</div>
+                    <div class="label">Total Sales</div>
+                </div>
+                <div class="card stat-card">
+                    <div class="icon products">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <div class="value">87</div>
+                    <div class="label">Total Products</div>
+                </div>
+                <div class="card stat-card">
+                    <div class="icon users">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="value">542</div>
+                    <div class="label">Total Customers</div>
+                </div>
+                <div class="card stat-card">
+                    <div class="icon revenue">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <div class="value">$24,568</div>
+                    <div class="label">Total Revenue</div>
+                </div>
+            </div>
+
+            <!-- Charts -->
+            <div class="charts">
+                <div class="chart-container">
+                    <div class="chart-header">
+                        <div class="chart-title">Sales Overview</div>
+                        <select class="form-control" style="width: auto; padding: 5px;">
+                            <option>Last 7 Days</option>
+                            <option>Last Month</option>
+                            <option>Last Year</option>
+                        </select>
+                    </div>
+                    <div
+                        style="height: 300px; background-color: #f9f9f9; display: flex; align-items: center; justify-content: center;">
+                        [Sales Chart Will Appear Here]
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <div class="chart-header">
+                        <div class="chart-title">Top Selling Plants</div>
+                    </div>
+                    <div
+                        style="height: 300px; background-color: #f9f9f9; display: flex; align-items: center; justify-content: center;">
+                        [Top Products Chart Will Appear Here]
+                    </div>
+                </div>
+            </div>
+
+            <!-- Products Table -->
+            <div class="products-section">
+                <div class="section-header">
+                    <h3>Plants Management</h3>
+                    <button class="btn btn-primary" id="addPlantBtn">
+                        <i class="fas fa-plus"></i> Add New Plant
+                    </button>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Image</th>
+                            <th>Name</th>
+                            <th>Category</th>
+                            <th>Price</th>
+                            <th>Stock</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td><img src="https://via.placeholder.com/40" alt="Plant"
+                                    style="width: 40px; height: 40px; object-fit: cover;"></td>
+                            <td>Snake Plant</td>
+                            <td>Indoor</td>
+                            <td>$29.99</td>
+                            <td>45</td>
+                            <td>
+                                <button class="action-btn edit-btn"><i class="fas fa-edit">edit</i></button>
+                                <button class="action-btn delete-btn"><i class="fas fa-trash">delete</i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td><img src="https://via.placeholder.com/40" alt="Plant"
+                                    style="width: 40px; height: 40px; object-fit: cover;"></td>
+                            <td>Monstera Deliciosa</td>
+                            <td>Indoor</td>
+                            <td>$49.99</td>
+                            <td>32</td>
+                            <td>
+                                <button class="action-btn edit-btn"><i class="fas fa-edit">edit</i></button>
+                                <button class="action-btn delete-btn"><i class="fas fa-trash">delete</i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td><img src="https://via.placeholder.com/40" alt="Plant"
+                                    style="width: 40px; height: 40px; object-fit: cover;"></td>
+                            <td>Lavender</td>
+                            <td>Outdoor</td>
+                            <td>$19.99</td>
+                            <td>67</td>
+                            <td>
+                                <button class="action-btn edit-btn"><i class="fas fa-edit">edit</i></button>
+                                <button class="action-btn delete-btn"><i class="fas fa-trash">delete</i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td><img src="https://via.placeholder.com/40" alt="Plant"
+                                    style="width: 40px; height: 40px; object-fit: cover;"></td>
+                            <td>Fiddle Leaf Fig</td>
+                            <td>Indoor</td>
+                            <td>$59.99</td>
+                            <td>28</td>
+                            <td>
+                                <button class="action-btn edit-btn"><i class="fas fa-edit">edit</i></button>
+                                <button class="action-btn delete-btn"><i class="fas fa-trash">delete</i></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add/Edit Plant Modal -->
+    <div class="modal" id="plantModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalTitle">Add New Plant</h3>
+                <button class="close-btn" id="closeModal">&times;</button>
+            </div>
+            <form id="plantForm">
+                <div class="form-group">
+                    <label for="plantName">Plant Name</label>
+                    <input type="text" id="plantName" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="plantCategory">Category</label>
+                    <select id="plantCategory" class="form-control" required>
+                        <option value="">Select Category</option>
+                        <option value="Indoor">Indoor</option>
+                        <option value="Outdoor">Outdoor</option>
+                        <option value="Succulent">Succulent</option>
+                        <option value="Flowering">Flowering</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="plantPrice">Price ($)</label>
+                    <input type="number" id="plantPrice" class="form-control" step="0.01" required>
+                </div>
+                <div class="form-group">
+                    <label for="plantStock">Stock Quantity</label>
+                    <input type="number" id="plantStock" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="plantDescription">Description</label>
+                    <textarea id="plantDescription" class="form-control" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="plantImage">Image</label>
+                    <link rel="stylesheet"
+                        href="https://cdn.jsdelivr.net/npm/@uploadcare/file-uploader@1/web/uc-file-uploader-regular.min.css">
+                    <!-- <script src="https://cdn.jsdelivr.net/npm/@uploadcare/file-uploader@1/web/uc-file-uploader-regular.min.js"></script> -->
+                    <script type="module">
+                        import * as UC from 'https://cdn.jsdelivr.net/npm/@uploadcare/file-uploader@1/web/uc-file-uploader-regular.min.js';
+                        UC.defineComponents(UC);
+
+                        const ctxProvider = document.querySelector("uc-upload-ctx-provider");
+
+                        ctxProvider.addEventListener("common-upload-success", (e) => {
+                            window.uploadedImg = e.detail.successEntries[0].cdnUrl;
+                            console.log(e.detail.successEntries[0].cdnUrl)
+                            console.log(
+                                "Uploaded files URL list",
+                                e.detail.successEntries.map((entry) => entry.cdnUrl)
+                            );
+                        });
+                    </script>
+
+                    <uc-config ctx-name="my-uploader" source-list="local" pubkey="d7c0267769dc15ad595c"></uc-config>
+
+                    <uc-file-uploader-regular ctx-name="my-uploader" class="uc-light"></uc-file-uploader-regular>
+
+                    <uc-upload-ctx-provider ctx-name="my-uploader"></uc-upload-ctx-provider>
+                </div>
+                <div class="form-actions">
+                    <button type="button" class="btn btn-secondary" id="cancelBtn">Cancel</button>
+                    <button type="button" class="btn btn-primary" id="addP">Save Plant</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="/js/admin.js"></script>
+</body>
+
+</html>

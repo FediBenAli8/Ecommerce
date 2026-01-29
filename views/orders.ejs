@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Orders - Plant Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/css/orders.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>My Orders</h1>
+            <a class="back-link">
+                <i class="fas fa-arrow-left"></i>
+                Back to Shopping
+            </a>
+        </div>
+
+        <!-- Filters -->
+        <div class="filters">
+            <button class="filter-btn active">All Orders</button>
+            <button class="filter-btn">Placed</button>
+            <button class="filter-btn">Processing</button>
+            <button class="filter-btn">Shipped</button>
+            <button class="filter-btn">Delivered</button>
+        </div>
+
+        <!-- Orders Container -->
+        <div class="orders-container">
+            <!-- Order 1 -->
+            <div class="order-card">
+                <div class="order-header">
+                    <div class="order-info">
+                        <div class="order-number">Order #ORD-12345</div>
+                    </div>
+                    <div class="order-status status-processing">Processing</div>
+                </div>
+
+                <div class="order-items">
+                    <div class="order-item">
+                        <div class="item-image">
+                            <img src="https://images.unsplash.com/photo-1512428813834-c702c7702b78?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" alt="Snake Plant">
+                        </div>
+                        <div class="item-details">
+                            <div class="item-name">Snake Plant</div>
+                            <div class="item-price">$29.99 × 2</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="order-timeline">
+                    <div class="timeline-title">Order Status</div>
+                    <div class="timeline-steps">
+                        <div class="timeline-step">
+                            <div class="step-icon step-completed">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div class="step-label">Order Placed</div>
+                        </div>
+                        <div class="timeline-step">
+                            <div class="step-icon step-active">
+                                <i class="fas fa-cog"></i>
+                            </div>
+                            <div class="step-label">Processing</div>
+                        </div>
+                        <div class="timeline-step">
+                            <div class="step-icon step-pending">
+                                <i class="fas fa-shipping-fast"></i>
+                            </div>
+                            <div class="step-label">Shipped</div>
+                        </div>
+                        <div class="timeline-step">
+                            <div class="step-icon step-pending">
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <div class="step-label">Delivered</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="order-footer">
+                    <div class="order-total">Total: $109.97</div>
+                    <div class="order-actions">
+                        <button class="action-btn view-btn">View Details</button>
+                        <button class="action-btn cancel-btn">Cancel Order</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Order 2 -->
+            
+
+        <!-- Empty State (hidden by default) -->
+        <!-- <div class="empty-orders">
+            <div class="empty-icon">
+                <i class="fas fa-shopping-bag"></i>
+            </div>
+            <h2 class="empty-title">No Orders Yet</h2>
+            <p class="empty-text">You haven't placed any orders. Start shopping to see your orders here!</p>
+            <a href="/products" class="shop-btn">Start Shopping</a>
+        </div> -->
+    </div>
+    <script src="/js/orders.js"></script>
+</body>
+</html>

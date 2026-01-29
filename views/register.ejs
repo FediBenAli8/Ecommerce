@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/register.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Green Haven Nursery</div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a>Home</a></li>
+            <li><a href="#">Plants</a></li>
+            <li><a href="#">Garden Supplies</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+    
+    <div class="register-container">
+        <div class="register-header">
+            <h2>Create Your Account</h2>
+            <p>Join our community of plant lovers and enjoy personalized services</p>
+        </div>
+        
+        <dic class="form">
+            <div class="name-fields">
+                <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last-name" required>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="phone">Phone Number (Optional)</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+            
+            <div class="form-group">
+                <label for="loc">Where do you live?</label>
+                <select id="loc" name="loc">
+                    <option value="">Select a gonverment</option>
+                    <option value="Ariana ">Ariana </option>
+                    <option value="Béja ">Béja </option>
+                    <option value="Ben Arous">Ben Arous</option>
+                    <option value="Bizerte ">Bizerte </option>
+                    <option value=" El Kef"> El Kef</option>
+                    <option value="Gabes ">Gabes </option>
+                    <option value="Gafsa ">Gafsa </option>
+                    <option value="Jendouba ">Jendouba </option>
+                    <option value="Kairouan ">Kairouan </option>
+                    <option value="Kesserine ">Kesserine </option>
+                    <option value="Kebili ">Kebili </option>
+                    <option value="Mahdia ">Mahdia </option>
+                    <option value="Manouba ">Manouba </option>
+                    <option value="Medenine ">Medenine </option>
+                    <option value="Monastir ">Monastir </option>
+                    <option value="Nabeul ">Nabeul </option>
+                    <option value="Sfax ">Sfax </option>
+                    <option value="Sidi Bouzid">Sidi Bouzid</option>
+                    <option value="Siliana ">Siliana </option>
+                    <option value="Sousse ">Sousse </option>
+                    <option value="Tataouine ">Tataouine </option>
+                    <option value="Tozeur ">Tozeur </option>
+                    <option value="Tunis ">Tunis </option>
+                    <option value="Zaghouan">Zaghouan</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="garden-type">What best describes your garden?</label>
+                <select id="garden-type" name="garden-type">
+                    <option value="">Select an option</option>
+                    <option value="indoor">Indoor plants only</option>
+                    <option value="outdoor">Outdoor garden</option>
+                    <option value="both">Both indoor and outdoor</option>
+                    <option value="none">I don't have a garden yet</option>
+                </select>
+            </div>
+            
+            <div class="terms">
+                <input type="checkbox" id="agree-terms" name="agree-terms" required>
+                <label for="agree-terms">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></label>
+            </div>
+            
+            <button class="btn">Create Account</button>
+            
+            <div class="login-link">
+                <p>Already have an account? <a>Login here</a></p>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer-content">
+            <p>123 Garden Lane, Greenville, GV 12345</p>
+            <p>Phone: (555) 123-4567 | Email: info@greenhavennursery.com</p>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 Green Haven Nursery. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="/js/register.js"></script>
+    <script src="/js/welcome.js"></script>
+</body>
+</html>
