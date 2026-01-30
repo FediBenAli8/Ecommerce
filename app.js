@@ -48,7 +48,7 @@ app.post("/api/register", (req, res) => {
         if (err) throw err;
         console.log(result, "aaa")
         if (result.length == 0) {
-            if (mail != "fedibenali8@gmail.com") {
+            if (mail != "admin@gmail.com") {
                 role = "user"
             }
             else { role = "admin" }
